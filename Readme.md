@@ -22,3 +22,7 @@
 
 # 環境
 awsEC2のt4g.nanoで十分動作する
+
+# 参考文献
+- [Discord APIを利用して入室通知Botをつくってみた](https://techblog.cartaholdings.co.jp/entry/archives/6412)
+- [discordpy-japan メンバーがボイスチャンネルorステージチャンネルに参加した時](https://scrapbox.io/discordpy-japan/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%8C%E3%83%9C%E3%82%A4%E3%82%B9%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%ABor%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F%E6%99%82)

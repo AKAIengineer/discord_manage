@@ -1,3 +1,16 @@
+# 概要
+discordのVCチャンネルに人が入室したとき、その通知をLINEグループに送信するシステム。  
+このシステムにより、LINEグループのメンバーでゲームをしたいとき、いちいち「discordにいるよ」などと知らせる必要が無くなり、事前に予定を合わせずともLINE通知を確認してdiscordに参集することが可能となる。
+
+## 仕様
+- VCチャンネルに1人目が入室したとき、LINEに「discordに○○が入室しました。」と通知される。誰もいなくなったとき、「通話が終了しました。」と通知される。
+- LINEnotifyとdiscord.pyを使用している。（どちらもAPIのようなやつ）
+- 当スクリプトのAPIトークン部分を書き換えるだけで使用できる。
+- 常時コードを実行状態にしておくため、レンタルサーバーやクラウドサーバーなどを利用する必要がある。
+
+## 環境
+awsEC2のt4g.nanoで十分動作する
+
 # 実行手順
 1. apt update, apt upgradeの実行
 1. このgitをclone
@@ -19,9 +32,6 @@
     ```
     $ nohup python3 discord_bot.py &
     ```
-
-# 環境
-awsEC2のt4g.nanoで十分動作する
 
 # 参考文献
 - [Discord APIを利用して入室通知Botをつくってみた](https://techblog.cartaholdings.co.jp/entry/archives/6412)
